@@ -1,0 +1,41 @@
+body{
+    margin:auto;
+    padding:0;
+}
+header{
+
+}
+.container {
+display:flex;
+flex:1;
+}
+section {
+    background-color: #FFFAF1;
+    padding-right: 1em;
+    border:#1A1A1A 0.15em solid;
+    padding-right: ;
+
+}
+.research{
+}
+.madlibs{
+}
+.picture{
+
+}
+.game{
+
+}
+.research h2{
+    background-color: #1520DF;
+}
+.madlibs h2{
+    background-color:#009D03;
+}
+.picture h2{
+    background-color:#EB4B96;
+}
+.game h2{
+    background-color:#E34510;
+}
+
