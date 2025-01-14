@@ -1,40 +1,123 @@
 body{
-    margin:auto;
-    padding:0;
+    background-color: #F8BE00;
+    margin: auto;
+    max-width: 1200px;
+    font-family: "Mulish", serif;
+    font-weight:500;
+    font-size:1.3em;
+    color: #1A1A1A;
 }
+/*-------------------- header + container ----------------------*/
 header{
-
+    line-height: 0.25em;
+    color:#1A1A1A;
+}
+h1 {
+    font-weight:800;
+}
+header h2 {
+    font-weight:700;
+}
+h3 {
+    font-weight:600;
 }
 .container {
-display:flex;
-flex:1;
+    display:flex;
+    flex:1;
 }
+/*-------------------------- section ----------------------------*/
 section {
     background-color: #FFFAF1;
-    padding-right: 1em;
-    border:#1A1A1A 0.15em solid; 
-
+    border:#1A1A1A 0.2em solid; 
+    border-right: 0em solid;
+    max-height: 35em;
+    width:18em;
 }
+section:last-of-type {
+    border-right: #1A1A1A 0.2em solid;
+}
+section h2{
+    background-color:#e8e2d7;
+    padding:0.5em;
+    border-top:#1A1A1A 0.15em solid;
+    border-bottom:#1A1A1A 0.15em solid;
+    font-weight: 800;
+    color:#1A1A1A;
+}
+section ul li {
+    list-style-type: none;
+}
+section ul li a {
+    text-decoration: none;
+    color:#FFFAF1;
+}
+/*--------------------- research + pic ----------------------*/
 .research{
+    background-color: #1520DF;
+    padding-top:1.5em;
 }
-.madlibs{
+.research p {
+    background-color: #1A1A1A;
+    height: 14.5em;
+}
+.research ul {
+    padding-bottom:2em;
 }
 .picture{
-
+    background-color: #EB4B96;
+    padding-top:1.5em;
+}
+.picture p {
+    background-color: #1A1A1A;
+    height: 14.5em;
+}
+/*--------------------- madlibs + game ----------------------*/
+.madlibs{
+    background-color: #009D03;
+}
+.madlibs p {
+    background-color: #1A1A1A;
+    height:14.1em;
+}
+.madlibs ul li:last-of-type {
+    line-height:3em;
 }
 .game{
-
+    background-color: #E34510;
 }
-.research h2{
-    background-color: #1520DF;
+.game p {
+    background-color: #1A1A1A;
+    height:14.1em;
 }
-.madlibs h2{
-    background-color:#009D03;
-}
-.picture h2{
-    background-color:#EB4B96;
-}
-.game h2{
-    background-color:#E34510;
+.game ul li:last-of-type {
+    line-height:3em;
 }
 
+/*--------------------- ul ----------------------*/
+ul {
+    line-height: 2em;;
+}
+
+/*--------------------- footer ----------------------*/
+footer {
+    display: flex;
+    font-weight:600;
+}
+footer p {
+    padding:0.5em;
+    border:#1A1A1A 0.2em solid;
+    border-right:#1A1A1A 0em solid;
+}
+footer p:last-of-type {
+    border-right:#1A1A1A 0.2em solid;
+}
+.name {
+    color:#1A1A1A;
+    flex:1;
+}
+.email {
+    color:#F8BE00;
+    background-color:#1A1A1A;
+    width:100%;
+    flex:3;
+}
