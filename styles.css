@@ -25,6 +25,12 @@ h3 {
     display:flex;
     flex:1;
 }
+/*-------------------- tagline ----------------------*/
+em {
+    color:#E34510;
+    font-size:1em;
+}
+
 /*-------------------------- section ----------------------------*/
 section {
     background-color: #FFFAF1;
@@ -43,6 +49,7 @@ section h2{
     border-bottom:#1A1A1A 0.15em solid;
     font-weight: 800;
     color:#1A1A1A;
+    text-align:center;
 }
 section ul li {
     list-style-type: none;
@@ -63,6 +70,14 @@ section ul li a {
 .research ul {
     padding-bottom:2em;
 }
+.research ul li a:hover{
+    color:#1520DF;
+    background-color: #e8e2d7;
+    font-weight: 700;
+}
+.research ul li:hover{
+    background-color: #e8e2d7;
+}
 .picture{
     background-color: #EB4B96;
     padding-top:1.5em;
@@ -70,6 +85,20 @@ section ul li a {
 .picture p {
     background-color: #1A1A1A;
     height: 14.5em;
+}
+.picture ul li a:hover{
+    color:#EB4B96;
+    background-color: #e8e2d7;
+    font-weight: 700;
+}
+.picture ul li:hover{
+    background-color: #e8e2d7;
+}
+.picture ul li:last-of-type {
+    line-height:3em;
+}
+.picfin {
+    background-color: #1A1A1A;
 }
 /*--------------------- madlibs + game ----------------------*/
 .madlibs{
@@ -82,6 +111,17 @@ section ul li a {
 .madlibs ul li:last-of-type {
     line-height:3em;
 }
+.madlibs ul li a:hover{
+    color:#009D03;
+    background-color: #e8e2d7;
+    font-weight: 700;
+}
+.madlibs ul li:hover{
+    background-color: #e8e2d7;
+}
+.madfin {
+    background-color: #1A1A1A;
+}
 .game{
     background-color: #E34510;
 }
@@ -92,10 +132,21 @@ section ul li a {
 .game ul li:last-of-type {
     line-height:3em;
 }
+.game ul li a:hover{
+    color:#E34510;
+    background-color: #e8e2d7;
+    font-weight: 700;
+}
+.game ul li:hover{
+    background-color: #e8e2d7;
+}
+.gamefin {
+    background-color: #1A1A1A;
+}
 
 /*--------------------- ul ----------------------*/
 ul {
-    line-height: 2em;;
+    line-height: 2em;
 }
 
 /*--------------------- footer ----------------------*/
@@ -118,6 +169,13 @@ footer p:last-of-type {
 .email {
     color:#F8BE00;
     background-color:#1A1A1A;
-    width:100%;
-    flex:3;
+    max-width:100%;
+    flex:2;
+}
+.email:hover {
+    color: #1A1A1A;
+    background-color: #E34510;
+    flex:6;
+    font-weight:700;
+    font-size: 1em;
 }
