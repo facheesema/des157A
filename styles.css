@@ -6,8 +6,9 @@ body{
     font-weight:500;
     font-size:1.3em;
     color: #1A1A1A;
+    animation: bgcolor 15s ease infinite;
 }
-/*-------------------- header + container ----------------------*/
+/*--------------- header + container ---------------*/
 header{
     line-height: 0.25em;
     color:#1A1A1A;
@@ -30,7 +31,25 @@ em {
     color:#E34510;
     font-size:1em;
 }
+/*-------------------- animation ----------------------*/
+@keyframes bgcolor {
+    0% {
+        background-color: #F8BE00;
+    }
+    25% {
+        background-color: #e8e2d7;
+    }
+    50% {
+        background-color: #F8BE00;
+    }
+    75% {
+        background-color: #e8e2d7;
+    }
+    100% {
+        background-color: #F8BE00;
+    }
 
+}
 /*-------------------------- section ----------------------------*/
 section {
     background-color: #FFFAF1;
@@ -167,10 +186,14 @@ footer p:last-of-type {
     flex:1;
 }
 .email {
-    color:#F8BE00;
     background-color:#1A1A1A;
+    color: #F8BE00;
     max-width:100%;
     flex:2;
+}
+.email a {
+    text-decoration: none;
+    color: #F8BE00;
 }
 .email:hover {
     color: #1A1A1A;
