@@ -1,0 +1,52 @@
+body{
+    background-color: #F8BE00;
+    margin: auto;
+    max-width: 1200px;
+    font-family: "Mulish", serif;
+    font-weight:500;
+    font-size:1.3em;
+    color: #1A1A1A;
+}
+/*--------------- header + container ---------------*/
+header{
+    line-height: 0.25em;
+    color:#1A1A1A;
+}
+h1 {
+    font-weight:800;
+}
+header h2 {
+    font-weight:700;
+}
+/* ------------------- footer ------------------ */
+footer {
+    display: flex;
+    font-weight:600;
+}
+footer p {
+    padding:0.5em;
+    border:#1A1A1A 0.2em solid;
+    border-right:#1A1A1A 0em solid;
+    color:#1A1A1A;
+    flex:1;
+}
+footer p:last-of-type {
+    border-right:#1A1A1A 0.2em solid;
+}
+.email {
+    background-color:#1A1A1A;
+    color: #F8BE00;
+    max-width:100%;
+    flex:2;
+}
+.email a {
+    text-decoration: none;
+    color: #F8BE00;
+}
+.email:hover {
+    color: #1A1A1A;
+    background-color: #E34510;
+    flex:6;
+    font-weight:700;
+    font-size: 1em;
+}
