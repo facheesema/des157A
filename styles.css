@@ -6,7 +6,7 @@ body{
     font-weight:500;
     font-size:1.3em;
     color: #1A1A1A;
-    animation: bgcolor 15s ease infinite;
+    animation: bgcolor 45s ease infinite;
 }
 /*--------------- header + container ---------------*/
 header{
