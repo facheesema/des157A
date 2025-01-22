@@ -9,6 +9,8 @@ body{
 }
 /*--------------- header + container ---------------*/
 nav{
+    text-decoration: none;
+    list-style: none;
 }
 /*--------------- header + container ---------------*/
 header{
