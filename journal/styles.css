@@ -4,7 +4,7 @@ body{
     max-width: 1200px;
     font-family: "Mulish", serif;
     font-weight:500;
-    font-size:1.5em;
+    font-size:1.3em;
     color: #e8e2d7;
     padding: 2em;
 }
@@ -15,8 +15,8 @@ nav ul{
 nav ul li a{
     display: block;
     text-decoration: none;
-    color: #e8e2d7;
-    background-color: #1A1A1A;
+    color:#1520DF;
+    background-color:#e8e2d7;
     padding: 1em;
 }
 nav ul li a:hover{
@@ -45,6 +45,7 @@ h3 a{
 h3 a:hover{
     background-color:#e8e2d7;
     color: #1520DF;
+    padding: 0.2em;
 }
 /* ------------------- footer ------------------ */
 footer {
