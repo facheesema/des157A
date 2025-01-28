@@ -1,0 +1,79 @@
+body{
+    background-color: #009D03;
+    margin: auto;
+    max-width: 1200px;
+    font-family: "Mulish", serif;
+    font-weight:500;
+    font-size:1.3em;
+    color: #e8e2d7;
+    padding: 2em;
+}
+/*--------------- nav ---------------*/
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:#009D03;
+    background-color:#e8e2d7;
+    padding: 1em;
+}
+nav ul li a:hover{
+    color: #e8e2d7;
+    background-color: #009D03;
+    border: #e8e2d7 solid 0.1em;
+}
+/*--------------- headers ---------------*/
+h1{
+    font-weight:800;
+}
+section p a{
+    text-decoration: none;
+    color: #e8e2d7;
+    border-bottom:#e8e2d7 0.1em solid;
+    padding-bottom:0.2em;
+}
+section p a:hover{
+    background-color:#e8e2d7;
+    color:#009D03;
+    padding: 0.2em;
+}
+/*--------------- section ---------------*/
+section {
+    display:flex;
+    gap:1.5em;
+}
+/* ------------------- footer ------------------ */
+footer {
+    display: flex;
+    font-weight:600;
+}
+.me {
+    padding:0.5em;
+    border:#e8e2d7 0.2em solid;
+    border-right:#e8e2d7 0em solid;
+    color: #e8e2d7;
+    flex:1;
+}
+/* footer p:last-of-type {
+    border-right:#e8e2d7 0.2em solid;
+} */
+.email {
+    flex:2;
+}
+.email a {
+    padding:0.8em;
+    display:block;
+    text-decoration: none;
+    background-color:#e8e2d7;
+    color: #009D03;
+    max-width:100%;
+}
+.email a:hover {
+    color:#e8e2d7;
+    background-color:#009D03;
+    border:#e8e2d7 0.2em solid;
+    border-right:#e8e2d7 0em solid;
+    flex:6;
+}
