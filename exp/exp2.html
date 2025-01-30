@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2</title>
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"> 
+    <!-- my css -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Poopy Portal Page</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 id="title">Experiment 2</h1>
+    </header>
+
+    <button id="startButton">Start Judging me</button>
+
+    <script>
+        var questionInput="";
+        var adjArray = ["ugly","pretty","disgusting","filthy","gross","beautiful i guess","last year and outdated i fear"];
+
+
+        document.querySelector('#startButton').addEventListener('click', function() {
+            questionInput = prompt('tell me your favorite color you freak');
+            judgingu(); //imma judge u
+        });
+
+        function judgingu() {
+        // pick random number between 0-6 from my array
+            var num = Math.floor((Math.random() * 7)); 
+
+        // response w answer to prompt + random array adj
+            document.querySelector('#title').innerHTML = `${questionInput} ? Really ? That color is so shockingly ${adjArray[num]}`;
+        }
+    </script>
+</body>
+</html>
+
