@@ -8,7 +8,9 @@
     <!-- normalize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <!-- fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Slackey&display=swap" rel="stylesheet">
     <!-- css -->
     <link href="styles.css" rel="styles">
     <!-- js -->
@@ -38,53 +40,72 @@
             </p>
 
             <p class="q2">
-                <input type="radio" name="rodent" id="rodent">
-                <label for="rodent">Possom</label>
+                <fieldset>
+                    <legend>I need you to pick a rodent</legend>
+                
+                    <input type="radio" name="rodent" id="rodent">
+                    <label for="rodent">Possom</label>
 
-                <input type="radio" name="rodent" id="rodent">
-                <label for="rodent">Raccoon</label>
+                    <input type="radio" name="rodent" id="rodent">
+                    <label for="rodent">Raccoon</label>
 
-                <input type="radio" name="rodent" id="rodent">
-                <label for="rodent">Skunk</label>
+                    <input type="radio" name="rodent" id="rodent">
+                    <label for="rodent">Skunk</label>
 
-                <input type="radio" name="rodent" id="rodent">
-                <label for="rodent">Porcupine</label>
+                    <input type="radio" name="rodent" id="rodent">
+                    <label for="rodent">Porcupine</label>
+                </fieldset>
             </p>
         </form>
     </section>
 
     <section class="pt2">
-        <h2>Get Funky for Me</h2>
+        <h2>Talking Logistics</h2>
 
         <form method="post">
             <p class="q3">
+                <label for="place">Name a residency</label>
+                <input type="text" name="place" id="place">
+            </p>
+
+            <p class="q4">
                 <label for="num">Pick a number between 0-13</label>
                 <input type="text" name="num" id="num">
             </p>
 
-            <p class="q4">
-                <input type="radio" name="sec" id="sec">
-                <label for="sec">seconds</label>
+            <p class="q5">
+                <fieldset>
+                    <legend>Choose a timeframe</legend>
 
-                <input type="radio" name="min" id="min">
-                <label for="min">minutes</label>
+                    <input type="radio" name="sec" id="sec">
+                    <label for="sec">seconds</label>
 
-                <input type="radio" name="hr" id="hr">
-                <label for="hr">hours</label>
+                    <input type="radio" name="min" id="min">
+                    <label for="min">minutes</label>
 
-                <input type="radio" name="day" id="day">
-                <label for="day">days</label>
-                
-                <input type="radio" name="wk" id="wk">
-                <label for="wk">weeks</label>
+                    <input type="radio" name="hr" id="hr">
+                    <label for="hr">hours</label>
 
-                <input type="radio" name="month" id="month">
-                <label for="month">months</label>
+                    <input type="radio" name="day" id="day">
+                    <label for="day">days</label>
+                    
+                    <input type="radio" name="wk" id="wk">
+                    <label for="wk">weeks</label>
 
-                <input type="radio" name="yr" id="yr">
-                <label for="yr">years</label>
+                    <input type="radio" name="month" id="month">
+                    <label for="month">months</label>
+
+                    <input type="radio" name="yr" id="yr">
+                    <label for="yr">years</label>
+                </fieldset>
             </p>
         </form>
     </section>
+
+    <section class="pt2">
+        <h2>Talking Logistics</h2>
+
+        <form method="post">
+            <p class="q3">
 </body>
 </html>
