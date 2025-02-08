@@ -6,7 +6,7 @@ body{
     font-weight:500;
     font-size:1.3em;
     color: #e8e2d7;
-    padding: 2em;
+    padding: 9em;
 }
 
 /*--------------- nav ---------------*/
@@ -63,7 +63,7 @@ footer {
 .me {
     padding:0.5em;
     border:#e8e2d7 0.2em solid;
-    border-right:#e8e2d7 0em solid;
+    border-right:#e8e2d7 0.2em solid;
     color: #e8e2d7;
     flex:1;
 }

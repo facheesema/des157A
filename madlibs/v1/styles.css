@@ -1,4 +1,84 @@
+/* reset start */
+nav ul, nav ol {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*{
+    box-sizing:border-box;
+}
+/* reset done */
+
+body {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    background-color: #F2B611;
+    margin: auto;
+    padding-right:5em;
+    padding-left:5em;
+}
+
 header {
-    font-family: "Mulish", serif;
-    font-weight: 400;
+    font-weight: 900;
+    font-size:1.5em;
+    line-height:0.5em;
+    text-align: center;
+    color: #DA3908;
+}
+
+h2 {
+    font-weight: 700;
+    font-size:1em;
+    text-align: center;
+    padding-bottom:1em;
+}
+#title {
+    font-size:2em;
+}
+form {
+    display: flex;
+}
+
+/* top portion of question box */
+/* long rectangle bg */
+#rect { 
+    background-color:#DA3908;
+    width: 70%;
+    height: 4em;
+    margin: auto;
+    display:flex;
+    border-radius: 0%;
+    justify-content: center;
+}
+div {
+    background-color: #FFE9E4;
+    height:2em;
+    width: 2em;
+    gap:1.5em;
+    border-radius: 50%;
+    padding-top:1em;
+}
+
+/* bottom portion of question box */
+article {
+    background-color: #FFE9E4;
+    width:70%;
+    align-content: center;
+    margin:auto;
+    padding: 3em;
+}
+
+/* circle 1 */
+.c1 {
+    background-color:#F2B611;
+}
+
+/* section */
+section {
+    padding-bottom:2em;
 }
