@@ -21,6 +21,7 @@ body {
     margin: auto;
     padding-right:5em;
     padding-left:5em;
+    color: #DA3908;
 }
 
 header {
@@ -29,6 +30,7 @@ header {
     line-height:0.5em;
     text-align: center;
     color: #DA3908;
+    padding-bottom: 2em;
 }
 
 h2 {
@@ -56,7 +58,7 @@ form {
     justify-content: center;
 }
 div {
-    background-color: #FFE9E4;
+    background-color: #F2B611;
     height:2em;
     width: 2em;
     gap:1.5em;
@@ -66,19 +68,82 @@ div {
 
 /* bottom portion of question box */
 article {
-    background-color: #FFE9E4;
+    background-color: #F2B611;
     width:70%;
     align-content: center;
     margin:auto;
     padding: 3em;
 }
-
-/* circle 1 */
-.c1 {
-    background-color:#F2B611;
+#one {
+    background-color: #DA3908;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    color:#F2B611;
+    justify-items: center;
+    max-height:20em;
 }
-
+#one h3 {
+    color:#F2B611;
+    justify-items: center;
+}
+/* circle 1  and  3*/
+#c1, #c3{
+    background-color:#DA3908;
+    border: #F2B611 solid 0.15em;
+}
+/* circle 2  and  4*/
+#c2, #c4{
+    background-color:#F2B611;
+    border: #DA3908 solid 0.15em;
+}
 /* section */
 section {
     padding-bottom:2em;
+}
+.hidden {
+    display:none;
+}
+.showing {
+    display: block;
+}
+button, form {
+    margin: auto auto 0 auto;
+}
+button {
+    padding: 0.5em;
+    border: 0;  
+    /* border-radius: 11px; */
+    font-size: 1.2em;
+    background-color:#DA3908;
+    color:#FFE9E4;
+    cursor: pointer;
+}
+input[type="submit"] {
+    padding: 0.5em;
+    border: 0;  
+    /* border-radius: 11px; */
+    font-size: 1.2em;
+    background-color:#DA3908;
+    color: #F2B611;
+    cursor: pointer;
+}
+#goone {
+    background-color: #DA3908;
+    border: #F2B611 solid 0.2em;
+    color: #F2B611;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+#goone:hover {
+    background-color: #F2B611;
+    color: #DA3908;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.orange {
+    background-color: #DA3908;
+}
+.yellow {
+    background-color: #F2B611;
 }

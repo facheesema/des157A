@@ -1,0 +1,52 @@
+/* reset start */
+nav ul, nav ol {
+    list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+*{
+    box-sizing:border-box;
+}
+/* reset done */
+
+/* body + header*/
+body {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    background-color: #F2B611;
+    margin: auto;
+    padding-right:5em;
+    padding-left:5em;
+}
+header {
+    font-weight: 900;
+    font-size:1.5em;
+    line-height:0.5em;
+    text-align: center;
+    color: #DA3908;
+    padding-bottom: 2em; 
+}
+
+/* title page */
+#one {
+
+}
+
+/* page 1 & 3*/
+#two, #four {
+
+}
+
+
+/* page 2 & 4 */
+#three, #five {
+
+}
+
+/*  madlib */
+#madlib {
+
+}
