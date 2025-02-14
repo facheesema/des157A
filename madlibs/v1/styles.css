@@ -48,7 +48,7 @@ form {
 
 /* top portion of question box */
 /* long rectangle bg */
-#rect { 
+.rect { 
     background-color:#DA3908;
     width: 70%;
     height: 4em;
