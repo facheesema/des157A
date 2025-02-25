@@ -1,87 +1,118 @@
 /* general ---------------------------------- */
 body {
-    background-color: rgb(2, 15, 255);
+    /* background-color: rgb(2, 15, 255); */
+    background-color: rgb(0, 0, 0);
+    /* mix-blend-mode:color-dodge; */
     margin: auto;
-}
-
-/* header */
-header {
+    z-index:0;
+ }
+ 
+ 
+ /* header */
+ header {
     background-color: black;
-    color:rgb(2, 15, 255);
+    color:rgb(255, 2, 44);
     padding: 0.5em;
     justify-items: center;
     font-family: Helvetica, sans-serif;
-}
-/* discs------------------------------------ */
-.d {
+ }
+ /* discs------------------------------------ */
+ .d {
     animation: rotatedisc 10s infinite;
-    background-color: rgb(0, 0, 0);
-    /* mix-blend-mode: difference; */
-}
-
-.ds {
+    background-color: rgb(227, 255, 253);
+    border-radius: 100%;
+    z-index: 1;
+ }
+ 
+ 
+ .ds {
     animation: rotatespecial 10s infinite ease-in;
     background-color:ghostwhite;
     mix-blend-mode: difference;
-}
-
-
-/* box -------------------------------------- */
-.box {
+    z-index: 1;
+    border-radius: 100%;
+ }
+ 
+ 
+ 
+ 
+ /* box -------------------------------------- */
+ .box {
     position: relative;
     display: inline-block;
     mix-blend-mode: difference;
     animation: rotatespecial 10s infinite ease-in;
-}
-.box:hover, .box .overlay1:hover, .ds:hover {
+    z-index: 1;
+    border-radius: 100%;
+ }
+ .box:hover, .box .overlay1:hover, .ds:hover {
     background-color: aquamarine;
-    width: 250px;
-    height: 250px;
-}
-.box img {
+    width: 230px;
+    height: 230px;
+ }
+ .box img {
     display: block;
     object-fit: cover;
-}
-
-.box .overlay1, .box .overlay2, .box .overlay3, .box .overlay4, .box .overlay5, .box .overlay6{
+ }
+ 
+ 
+ .box .overlay1, .box .overlay2, .box .overlay3, .box .overlay4, .box .overlay5, .box .overlay6{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     animation: rotatespecial 10s infinite ease-in;
-}
-
-
-/* overlays----------------------------------- */
-.box .overlay1 {
+    z-index: 1;
+    border-radius: 100%;
+ }
+ 
+ 
+ 
+ 
+ /* overlays----------------------------------- */
+ .box .overlay1 {
     background: rgba(0, 36, 198, 0.5);
     mix-blend-mode:color-burn;
-}
-.box .overlay2 {
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay2 {
     background-color: rgb(255, 0, 149);
     mix-blend-mode: difference;
-}
-.box .overlay3 {
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay3 {
     background-color: rgb(253, 0, 30);
     mix-blend-mode:exclusion;
-}
-.box .overlay4 {
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay4 {
     background-color: rgb(204, 255, 0);
     mix-blend-mode:screen;
-}
-.box .overlay5 {
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay5 {
     background-color: rgb(0, 219, 4);
     mix-blend-mode: color-dodge;
-}
-.box .overlay6 {
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay6 {
     background-color: rgb(255, 137, 20);
-    mix-blend-mode: color-dodge;
-}
-
-
-/* rotate animation */
-@keyframes rotatedisc {
+    mix-blend-mode: exclusion;
+    width: 210px;
+    height:210px;
+ }
+ 
+ 
+ 
+ 
+ /* rotate animation */
+ @keyframes rotatedisc {
     0% {
         transform: rotate(0deg);
     }
@@ -103,8 +134,9 @@ header {
     90% {
         transform: rotate(270deg);
     }
-}
-
+ }
+ 
+ 
     @keyframes rotatespecial {
     0% {
         transform: rotate(270deg);
@@ -127,4 +159,5 @@ header {
     90% {
         transform: rotate(0deg);
     }
-}
+ }
+ 

@@ -1,0 +1,168 @@
+/* general ---------------------------------- */
+body {
+    /* background-color: rgb(2, 15, 255); */
+    background-color: rgb(0, 0, 0);
+    /* mix-blend-mode:color-dodge; */
+    margin: auto;
+    z-index:0;
+ }
+ .hidden {
+    display: none;
+
+ }
+ .showing {
+    display: block;
+ }
+ 
+ /* header */
+ header {
+    background-color: black;
+    color:rgb(255, 2, 44);
+    padding: 0.5em;
+    justify-items: center;
+    font-family: Helvetica, sans-serif;
+ }
+ /* discs------------------------------------ */
+ .d {
+    animation: rotatedisc 10s infinite;
+    background-color: rgb(227, 255, 253);
+    border-radius: 100%;
+    z-index: 1;
+ }
+ 
+ 
+ .ds {
+    animation: rotatespecial 10s infinite ease-in;
+    background-color:ghostwhite;
+    mix-blend-mode: difference;
+    z-index: 1;
+    border-radius: 100%;
+ }
+ 
+ 
+ 
+ 
+ /* box -------------------------------------- */
+ .box {
+    position: relative;
+    display: inline-block;
+    mix-blend-mode: difference;
+    animation: rotatespecial 10s infinite ease-in;
+    z-index: 1;
+    border-radius: 100%;
+ }
+ .box:hover, .box .overlay1:hover, .ds:hover {
+    background-color: aquamarine;
+    width: 230px;
+    height: 230px;
+ }
+ .box img {
+    display: block;
+    object-fit: cover;
+ }
+ 
+ 
+ .box .overlay1, .box .overlay2, .box .overlay3, .box .overlay4, .box .overlay5, .box .overlay6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rotatespecial 10s infinite ease-in;
+    z-index: 1;
+    border-radius: 100%;
+ }
+ 
+ 
+ 
+ 
+ /* overlays----------------------------------- */
+ .box .overlay1 {
+    background: rgba(0, 36, 198, 0.5);
+    mix-blend-mode:color-burn;
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay2 {
+    background-color: rgb(255, 0, 149);
+    mix-blend-mode: difference;
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay3 {
+    background-color: rgb(253, 0, 30);
+    mix-blend-mode:exclusion;
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay4 {
+    background-color: rgb(204, 255, 0);
+    mix-blend-mode:screen;
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay5 {
+    background-color: rgb(0, 219, 4);
+    mix-blend-mode: color-dodge;
+    width: 210px;
+    height:210px;
+ }
+ .box .overlay6 {
+    background-color: rgb(255, 137, 20);
+    mix-blend-mode: exclusion;
+    width: 210px;
+    height:210px;
+ }
+ 
+ 
+ 
+ 
+ /* rotate animation */
+ @keyframes rotatedisc {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(45deg);
+    }
+    30% {
+        transform: rotate(90deg);
+    }
+    45% {
+        transform: rotate(135deg);
+    }
+    60% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(225deg);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+ }
+ 
+ 
+    @keyframes rotatespecial {
+    0% {
+        transform: rotate(270deg);
+    }
+    15% {
+        transform: rotate(225deg);
+    }
+    30% {
+        transform: rotate(180deg);
+    }
+    45% {
+        transform: rotate(135deg);
+    }
+    60% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+ }
