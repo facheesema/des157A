@@ -2,12 +2,26 @@
     'use script'
     console.log('running js');
 
-    const discSpecial = document.querySelectorAll('.ds');
-    const discNormal = document.querySelectorAll('.d');
-    const myYap = document.querySelector('.yap');
+    const mySections = document.querySelectorAll('section');
 
-    discNormal.addEventListener('click', function(){
-        myYap.innerHTML = '<p> hello<p>';
+    document.querySelector('.box').addEventListener('click', function() {
+        mySections[0].className = "showing";
+        mySections[1].className = "hidden";
+        mySections[2].className = "hidden";
+    });
+    document.querySelector('.fairytopia').addEventListener('click', function() {
+        mySections[0].className = "hidden";
+        mySections[1].className = "showing";
+        mySections[2].className = "hidden";
+
+    });
+    document.querySelector('.flushedaway').addEventListener('click', function() {
+        mySections[0].className = "hidden";
+        mySections[1].className = "hidden";
+        mySections[2].className = "showing";
+
     });
 
-} ());
+    
+
+}());
