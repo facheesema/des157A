@@ -1,0 +1,52 @@
+body {
+    font-family: "Mulish", serif;  
+    color: #FFFAF1;
+    font-size: 1em;
+    background-color: #191716;
+    max-width: 1200px;
+}
+
+header {
+    font-size: 2em;
+}
+h1 {
+    color: #F8BE00;
+    font-size: 2em;
+    font-weight: 900;
+}
+.megaContainer {
+    display: flex;
+}
+
+.leftSide {
+    background-color: #191716;
+    flex:1;
+    padding-right: 4em;
+    padding-left: 1em;
+}
+.rightSide {
+    background-color: #EB4B96;
+    flex: 3;
+    padding-top: 4em;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+button {
+    background-color: #F8BE00;
+    color: 191716;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.gameSqrs {
+    display: flex;
+}
+
+div {
+    background-color: #F8BE00;
+    width: 148px;
+    height: 148px;
+    border: 3px solid #191716;
+}
+
